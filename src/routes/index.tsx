@@ -54,7 +54,7 @@ function Index() {
           <div className="hero-topline">✣ POP! LAB <small>THE BALLOON PLAYGROUND</small></div>
           <div className="hero-cta"><Button asChild className="pill-button"><a href="#friends">認識氣球朋友 <ArrowUpRight size={15} /></a></Button></div>
           <div className="hero-eyebrow">POP, POP, POP!</div>
-          <h1 className="hero-title" id="hero-title"><span className="blue">HAVE A </span><span className="red">NICE </span><span className="green">BALLOON!</span></h1>
+          <h1 className="hero-title" id="hero-title"><span className="blue">HAVE A</span>{" "}<span className="red">NICE</span>{" "}<span className="green">BALLOON!</span></h1>
           <p className="hero-title-zh">把快樂，吹成各種模樣。</p>
           <img className="hero-image" src={heroImage} alt="藍色氣球狗、紅色笑臉花與綠色氣球恐龍" width={1536} height={1024} fetchPriority="high" />
           <span className="hero-side">想像力，現在開始膨脹！</span>
