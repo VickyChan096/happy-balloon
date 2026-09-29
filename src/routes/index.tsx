@@ -73,7 +73,7 @@ function Index() {
         <section className="intro" id="concept" aria-labelledby="concept-title">
           <svg className="intro-ribbons" viewBox="0 0 1440 860" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
             <path className="ribbon-path ribbon-blue" pathLength="1" d="M -210 635 C -150 360 -95 93 176 73 C 327 62 411 150 439 294" />
-            <path className="ribbon-path ribbon-red" pathLength="1" d="M 777 -154 C 957 -10 1029 163 955 337 C 888 496 899 601 1050 752" />
+            <path className="ribbon-path ribbon-red" pathLength="1" d="M 1060 -154 C 1260 -10 1340 163 1270 337 C 1200 496 1210 601 1350 752" />
             <path className="ribbon-path ribbon-green" pathLength="1" d="M 1610 80 C 1396 149 1202 273 1192 458 C 1180 630 1352 772 1525 885" />
           </svg>
           <div className="intro-content">
