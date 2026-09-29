@@ -71,11 +71,17 @@ function Index() {
         <Ticker />
 
         <section className="intro" id="concept" aria-labelledby="concept-title">
-          <span className="intro-spark left" aria-hidden="true">✳</span><span className="intro-spark right" aria-hidden="true">✦</span><span className="intro-dots" aria-hidden="true"><i /><i /><i /></span>
-          <span className="section-kicker">HELLO, IMAGINATION!</span>
-          <h2 className="intro-title" id="concept-title">LIFE IS<br /><span>MORE FUN</span><br />WITH BALLOONS.</h2>
-          <p className="intro-copy">一扭、一轉、一點點想像，<br />平凡的氣球就有了自己的故事。</p>
-          <p className="intro-small">牠可以是陪你散步的小狗、永遠盛開的花，<br />也可以是一隻愛冒險的恐龍。<br />造型氣球，把每個瞬間都變成值得微笑的回憶。</p>
+          <svg className="intro-ribbons" viewBox="0 0 1440 860" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+            <path className="ribbon-path ribbon-blue" pathLength="1" d="M -210 635 C -150 360 -95 93 176 73 C 327 62 411 150 439 294" />
+            <path className="ribbon-path ribbon-red" pathLength="1" d="M 777 -154 C 957 -10 1029 163 955 337 C 888 496 899 601 1050 752" />
+            <path className="ribbon-path ribbon-green" pathLength="1" d="M 1610 80 C 1396 149 1202 273 1192 458 C 1180 630 1352 772 1525 885" />
+          </svg>
+          <div className="intro-content">
+            <span className="section-kicker">HELLO, IMAGINATION!</span>
+            <h2 className="intro-title" id="concept-title">LIFE IS<br /><span>MORE FUN</span><br />WITH BALLOONS.</h2>
+            <p className="intro-copy">一扭、一轉、一點點想像，<br />平凡的氣球就有了自己的故事。</p>
+            <p className="intro-small">牠可以是陪你散步的小狗、永遠盛開的花，<br />也可以是一隻愛冒險的恐龍。<br />造型氣球，把每個瞬間都變成值得微笑的回憶。</p>
+          </div>
         </section>
 
         <Ticker green />
