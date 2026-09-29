@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { ArrowDown, ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/balloon-hero.png";
 import dogImage from "@/assets/balloon-dog.png";
@@ -33,20 +32,27 @@ function Ticker({ green = false }: { green?: boolean }) {
 }
 
 function Index() {
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <header className="site-header">
         <a className="brand-lockup" href="#top" aria-label="造型氣球研究所，回到頂部"><span>POP! LAB</span></a>
         <div className="header-spacer" />
         <a className="header-play" href="#concept" aria-label="探索造型氣球">▶</a>
-        <nav className={`header-nav ${menuOpen ? "open" : ""}`} aria-label="主選單">
-          <a href="#top" onClick={() => setMenuOpen(false)}><span className="nav-triangle">▶</span> TOP</a>
-          <a href="#concept" onClick={() => setMenuOpen(false)}><span className="nav-triangle">▶</span> CONCEPT</a>
-          <a href="#friends" onClick={() => setMenuOpen(false)}><span className="nav-triangle">▶</span> FRIENDS</a>
-          <a href="#story" onClick={() => setMenuOpen(false)}><span className="nav-triangle">▶</span> STORY</a>
+        <nav className="header-nav" aria-label="主選單">
+          <a href="#top"><span className="nav-triangle">▶</span> TOP</a>
+          <a href="#concept"><span className="nav-triangle">▶</span> CONCEPT</a>
+          <a href="#friends"><span className="nav-triangle">▶</span> FRIENDS</a>
+          <a href="#story"><span className="nav-triangle">▶</span> STORY</a>
         </nav>
-        <Button className="mobile-menu-button" aria-label={menuOpen ? "關閉選單" : "開啟選單"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
+        <details className="mobile-nav">
+          <summary aria-label="開啟選單"><Menu size={22} /></summary>
+          <nav aria-label="手機選單">
+            <a href="#top">▶ TOP</a>
+            <a href="#concept">▶ CONCEPT</a>
+            <a href="#friends">▶ FRIENDS</a>
+            <a href="#story">▶ STORY</a>
+          </nav>
+        </details>
       </header>
 
       <main>
