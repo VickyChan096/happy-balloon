@@ -76,6 +76,11 @@ function Index() {
             <path className="ribbon-path ribbon-red" pathLength="1" d="M 1060 -154 C 1260 -10 1340 163 1270 337 C 1200 496 1210 601 1350 752" />
             <path className="ribbon-path ribbon-green" pathLength="1" d="M 1610 80 C 1396 149 1202 273 1192 458 C 1180 630 1352 772 1525 885" />
           </svg>
+          <svg className="intro-ribbons intro-ribbons-mobile" viewBox="0 0 390 680" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path className="ribbon-path ribbon-blue" pathLength="1" d="M -145 415 C -118 215 -63 119 22 87 C 57 74 71 98 80 132" />
+            <path className="ribbon-path ribbon-red" pathLength="1" d="M 269 -120 C 393 -30 440 78 422 205 C 403 315 399 410 454 548" />
+            <path className="ribbon-path ribbon-green" pathLength="1" d="M 555 215 C 447 278 410 383 423 474 C 431 538 474 591 526 641" />
+          </svg>
           <div className="intro-content">
             <span className="section-kicker">HELLO, IMAGINATION!</span>
             <h2 className="intro-title" id="concept-title">LIFE IS<br /><span>MORE FUN</span><br />WITH BALLOONS.</h2>
